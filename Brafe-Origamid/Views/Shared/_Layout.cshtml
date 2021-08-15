@@ -1,21 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>@ViewData["Title"] --> Brafé 1 </title>
+    <title>@ViewData["Title"] Home Page =- </title>
 
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
 
     <link rel="stylesheet" href="~/css/style.css" />
 </head>
-
 <body>
     <header class="menu">
         <div class="menu-container">
-            <a class="menu-logo" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/brafe.png"
-                    alt="Brafe"></a>
+            <a class="menu-logo" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/brafe.png" alt="Brafe"></a>
             <nav class="menu-nav">
                 <ul>
                     <li>
@@ -40,18 +37,18 @@
             @RenderBody()
         </main>
     </div>
-
+   
     <footer class="footer">
-        <div class="footer-container">
-            <p>Esse é um projeto do DNA Developer. Mais em dna.developer.com<br />Rua Analândia 474,São Joaquim
-                - Santa Bárbara d'Oeste - SP'</p>
+        <div class="footer-container" >
+           <p>Esse é um projeto do DNA Developer. Mais em dna.developer.com<br />Rua Analândia 474,São Joaquim
+            - Santa Bárbara d'Oeste - SP'</p> 
             <img src="~/img/brafe.png" alt="Brasfe">
         </div>
     </footer>
-    @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-
 </html>
+/
